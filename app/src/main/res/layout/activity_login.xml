@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imgBtReg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/r_bej"
+        tools:context=".LoginActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constBrown"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/r_cyan_dark"
+            app:layout_constraintHeight_percent=".97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".95">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constRed"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/r_red"
+                app:layout_constraintHeight_percent=".97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".95">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constLogo"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/constraint_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imgLogo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent=".9"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent=".9"
+                        app:srcCompat="@drawable/logo2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/constraint_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constLogo">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constLoginInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toTopOf="@+id/constLoginButton"
+                        app:layout_constraintHeight_percent=".6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent=".7">
+
+                        <EditText
+                            android:id="@+id/editUserName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_bg"
+                            android:ems="10"
+                            android:fontFamily="@font/potta_one"
+                            android:hint="Koleksiyoner"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                            android:inputType="textFilter"
+                            android:maxLength="15"
+                            android:paddingStart="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/r_bej_light"
+                            android:textSize="22dp"
+                            app:layout_constraintBottom_toTopOf="@+id/editPassword"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_bg"
+                            android:ems="10"
+                            android:fontFamily="@font/potta_one"
+                            android:hint="Parola"
+                            android:inputType="numberPassword"
+                            android:maxLength="6"
+                            android:paddingStart="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/r_bej_light"
+                            android:textSize="22dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editUserName" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constLoginButton"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent=".4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constLoginInfo">
+
+                        <TextView
+                            android:id="@+id/textBtLogin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/potta_one"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:gravity="right"
+                            android:paddingStart="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="15dp"
+                            android:text="Giriş Yap"
+                            android:textColor="@color/r_bej_light"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.494"
+                            app:layout_constraintWidth_percent=".6" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constLogin" >
+
+                    <TextView
+                        android:id="@+id/textBtRegister"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_button_bg"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/potta_one"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="right"
+                        android:paddingStart="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="Hesap Oluştur"
+                        android:textColor="@color/r_bej_light"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.494"
+                        app:layout_constraintWidth_percent=".6" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

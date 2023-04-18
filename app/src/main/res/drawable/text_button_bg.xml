@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/r_cyan_dark" />
+
+    <corners
+        android:bottomLeftRadius="20dp"
+        android:topLeftRadius="20dp" />
+</shape>
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:right="-5dp">
+        <shape
+            android:shape="rectangle">
+
+            <corners
+                android:bottomLeftRadius="20dp"
+                android:topLeftRadius="20dp" />
+
+            <solid android:color="@color/r_cyan_dark"/>
+            &lt;!&ndash;Give the dashed lines their property
+                 like color, width, and dashGap&ndash;&gt;
+            <stroke
+                android:color="@color/black"
+                android:width="2dp"/>
+        </shape>
+    </item>
+</layer-list>-->
+
+

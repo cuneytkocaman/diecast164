@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constBrown"
+        android:background="@color/r_orange"
+        android:layout_width="300dp"
+        android:layout_height="370dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constOrange"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".96"
+            app:layout_constraintWidth_percent=".95"
+            android:background="@color/r_brown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constCyan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/r_cyan"
+                app:layout_constraintHeight_percent=".96"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".95">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constDiecastInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".8"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/editAlertTrademark"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintWidth_percent=".9"
+                        app:layout_constraintHeight_percent=".2"
+                        android:background="@drawable/alert_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/potta_one"
+                        android:hint="Üretici (matchbox vs)"
+                        android:paddingStart="10dp"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:maxLength="30"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/r_bej_light"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toTopOf="@+id/editAlertBrand"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editAlertBrand"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintWidth_percent=".9"
+                        app:layout_constraintHeight_percent=".2"
+                        android:background="@drawable/alert_text_bg"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:fontFamily="@font/potta_one"
+                        android:hint="Araç Markası"
+                        android:paddingStart="10dp"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/r_bej_light"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toTopOf="@+id/editAlertModel"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editAlertTrademark" />
+
+                    <EditText
+                        android:id="@+id/editAlertModel"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintWidth_percent=".9"
+                        app:layout_constraintHeight_percent=".2"
+                        android:background="@drawable/alert_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/potta_one"
+                        android:hint="Model"
+                        android:inputType="textPersonName"
+                        android:maxLength="30"
+                        android:paddingStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/r_bej_light"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toTopOf="@+id/editAlertCode"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editAlertBrand" />
+
+                    <EditText
+                        android:id="@+id/editAlertCode"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintWidth_percent=".9"
+                        app:layout_constraintHeight_percent=".2"
+                        android:background="@drawable/alert_text_bg"
+                        android:ems="10"
+                        android:fontFamily="@font/potta_one"
+                        android:hint="Üretici Kodu (H000 vs)"
+                        android:textAllCaps="true"
+                        android:inputType="textPersonName"
+                        android:maxLength="10"
+                        android:paddingStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/r_bej_light"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editAlertModel" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constAddButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constDiecastInfo">
+
+                    <TextView
+                        android:id="@+id/textAlertYes"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:fontFamily="@font/potta_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/r_burgundy"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/textAlertNo"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/textAlertNo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:fontFamily="@font/potta_one"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="Hayır"
+                        android:textColor="@color/r_bej_light"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textAlertYes"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

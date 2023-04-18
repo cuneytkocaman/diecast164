@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/r_bej"
+        tools:context=".LoginActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constDarkCyan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/r_cyan_dark"
+            app:layout_constraintHeight_percent=".97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".95">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constRed"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/r_red"
+                app:layout_constraintHeight_percent=".97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".95">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constUser"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/constraint_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/imgBackList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:srcCompat="@drawable/ic_back"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:fontFamily="@font/potta_one"
+                        android:gravity="center"
+                        android:text="Diecast Ekle"
+                        android:textColor="@color/r_bej_light"
+                        android:textSize="22dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imgBackList"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/constraint_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constUser">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constDiecastInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent=".7">
+
+                        <EditText
+                            android:id="@+id/editCarModel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_bg"
+                            android:ems="10"
+                            android:fontFamily="@font/potta_one"
+                            android:hint="Model"
+                            android:inputType="textPersonName"
+                            android:maxLength="30"
+                            android:paddingStart="10dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="20dp"
+                            android:textColor="@color/r_burgundy"
+                            android:textColorHint="@color/r_bej_light"
+                            android:textSize="18dp"
+                            app:layout_constraintBottom_toTopOf="@+id/editTradeCode"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editCarBrand" />
+
+                        <EditText
+                            android:id="@+id/editTradeCode"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_bg"
+                            android:ems="10"
+                            android:fontFamily="@font/potta_one"
+                            android:hint="Üretici Kodu (H000 vs)"
+                            android:inputType="textPersonName"
+                            android:maxLength="10"
+                            android:paddingStart="10dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="20dp"
+                            android:textColor="@color/r_burgundy"
+                            android:textColorHint="@color/r_bej_light"
+                            android:textSize="18dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editCarModel" />
+
+                        <EditText
+                            android:id="@+id/editCarBrand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_bg"
+                            android:ems="10"
+                            android:fontFamily="@font/potta_one"
+                            android:hint="Araç Markası"
+                            android:inputType="textPersonName"
+                            android:maxLength="30"
+                            android:paddingStart="10dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="20dp"
+                            android:textColor="@color/r_burgundy"
+                            android:textColorHint="@color/r_bej_light"
+                            android:textSize="18dp"
+                            app:layout_constraintBottom_toTopOf="@+id/editCarModel"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textBtSelectTrademark" />
+
+                        <TextView
+                            android:id="@+id/textBtSelectTrademark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_button_bg_2"
+                            android:fontFamily="@font/potta_one"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:text="Üretici Seç"
+                            android:textColor="@color/r_bej_light"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/editCarBrand"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constSaveButton"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/constDiecastInfo"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintWidth_percent=".3">
+
+                        <ImageButton
+                            android:id="@+id/imgBtSave"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_button_bg"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5"
+                            app:layout_constraintWidth_percent=".8"
+                            app:srcCompat="@drawable/ic_save"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--<androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constImageAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent=".4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constRegister">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constImage"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:layout_constraintWidth_percent=".7">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constCarImage"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toTopOf="@+id/constImageAddBt"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHeight_percent=".6"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imgCarPhoto"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:visibility="visible"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHeight_percent=".9"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5"
+                                app:layout_constraintWidth_percent=".9"
+                                app:srcCompat="@drawable/ic_car" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constImageAddBt"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHeight_percent=".4"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constCarImage">
+
+                            <TextView
+                                android:id="@+id/textBtSelectImage"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@drawable/text_button_bg_2"
+                                android:fontFamily="@font/potta_one"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="5dp"
+                                android:paddingBottom="15dp"
+                                android:text="Resim Seç"
+                                android:textColor="@color/r_bej_light"
+                                android:textSize="18dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHeight_percent=".5"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5"
+                                app:layout_constraintWidth_percent=".6" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constImageBt"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/constImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:layout_constraintWidth_percent=".3">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="66dp"
+                            android:layout_height="49dp"
+                            android:layout_marginBottom="35dp"
+                            android:text="Button"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

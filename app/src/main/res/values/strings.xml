@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Diecast 164</string>
+
+    <string name="db_user">User</string>
+    <string name="db_car">Car</string>
+    <string name="db_trademark">Trademark</string>
+    <string name="db_error">ErrorLog</string>
+</resources>

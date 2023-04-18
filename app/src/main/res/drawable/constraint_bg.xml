@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:left="-5dp"
+        android:right="-5dp"
+        android:top="-5dp">
+        <shape
+            android:shape="rectangle">
+
+            <solid android:color="@color/r_red"/>
+            <!--Give the dashed lines their property
+                 like color, width, and dashGap-->
+            <stroke
+                android:color="@color/r_cyan_dark"
+                android:dashWidth="10dp"
+                android:dashGap="5dp"
+                android:width="2dp"/>
+        </shape>
+    </item>
+</layer-list>
+
+

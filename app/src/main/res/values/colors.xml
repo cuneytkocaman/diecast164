@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="amber">#FFA000</color>
+    <color name="yellow">#FFC107</color>
+    <color name="blue_light">#00bce3</color>
+    <color name="blue_dark">#0053E3</color>
+    <color name="orange">#E66312</color>
+    <color name="green_light">#64be0f</color>
+    <color name="blue_grey">#303855</color>
+    <color name="pink">#BE314E</color>
+    <color name="pink_light">#D83C5C</color>
+    <color name="red_light">#E12F2F</color>
+    <color name="grey">#757575</color>
+    <color name="teal">#00887C</color>
+    <color name="turquoise">#0097A7</color>
+
+    <color name="r_bej_light">#EFD5AB</color>
+    <color name="r_bej">#d5b279</color>
+    <color name="r_yellow">#E3AD31</color>
+    <color name="r_orange">#D6740C</color>
+    <color name="r_red">#c24d2c</color>
+    <color name="r_red_dark">#9F3D21</color>
+    <color name="r_green_light">#96985e</color>
+    <color name="r_green_dark">#4B5319</color>
+    <color name="r_brown">#655643</color>
+    <color name="r_cyan_light">#526C73</color>
+    <color name="r_cyan">#3C838F</color>
+    <color name="r_cyan_dark">#0A4D61</color>
+    <color name="r_burgundy">#4C0C0E</color>
+
+</resources>

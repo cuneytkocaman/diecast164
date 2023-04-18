@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constAlertDialog"
+        android:layout_width="236dp"
+        android:layout_height="337dp"
+        android:background="@drawable/alert_dialog_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:id="@+id/rGroupTrademark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioHot"
+                android:textColor="@color/r_bej"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/potta_one"
+                android:textSize="14dp"
+                android:text="Hot Wheels"
+                 />
+
+            <RadioButton
+                android:id="@+id/radioMatchbox"
+                android:layout_width="match_parent"
+                android:textColor="@color/r_bej"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/potta_one"
+                android:text="Matchbox"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radioMajorette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/r_bej"
+                android:fontFamily="@font/potta_one"
+                android:text="Majorette"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radioMaisto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/r_bej"
+                android:fontFamily="@font/potta_one"
+                android:text="Maisto"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radioMiniGT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/r_bej"
+                android:fontFamily="@font/potta_one"
+                android:text="Mini GT"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radioGreenLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/r_bej"
+                android:fontFamily="@font/potta_one"
+                android:text="GreenLight"
+                android:textSize="14dp" />
+
+        </RadioGroup>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constAlertBt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rGroupTrademark">
+
+            <TextView
+                android:id="@+id/textAlertClose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/potta_one"
+                android:gravity="center"
+                android:text="Çık"
+                android:textSize="16dp"
+                android:textColor="@color/r_orange"
+                app:layout_constraintEnd_toStartOf="@+id/textAlertOk"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textAlertOk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/r_yellow"
+                android:fontFamily="@font/potta_one"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="Tamam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textAlertClose"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
